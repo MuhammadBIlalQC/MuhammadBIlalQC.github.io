@@ -55,7 +55,11 @@
             #progress-bars-container p {
                 color: #6EEFBE;
             }
-
+			
+			.tri-pic {
+				height: 350px;
+			}
+			
             @media only screen and (min-height: 800px) {
                 #intro > h1 {
                     padding-top: 200px;
@@ -107,6 +111,17 @@
     </div>
 
     <div id="main" class="container-fluid">
+		<div class="row">
+			<div class="col-md-offset-1 col-md-3 tri-pic-container">
+				<img class='tri-pic' src="images/boy-studying.png" />
+			</div>
+			<div class="col-md-offset-1 col-md-3 tri-pic-container">
+				<img class='tri-pic' src="images/computer-hello.png" />
+			</div>
+			<div class="col-md-offset-1 col-md-3 tri-pic-container">
+				<img class='tri-pic' src="images/teacher.png" />
+			</div>
+		</div>
         <div class="row">
             <div class="col-xs-12 col-md-offset-1 col-md-5">
                 <h1 style="text-align: center">Hi, I am Muhammad!</h1>
@@ -118,7 +133,7 @@
                 </p>
             </div>
             <div class="col-md-5">
-                <img id="cat" src="images/cat2.png">
+                <img id="cat" src="images/cat3.png">
             </div>
         </div>
         <div class="row" style="margin-top: 40px;">
@@ -162,8 +177,8 @@
     <script>
         $(document).ready(function(){
             setTimeout(function(){
-                $('#intro').fadeOut(3000);
-                setTimeout(function() {$('#main').fadeIn(2000)}, 3000);
+                $('#intro').fadeOut(1500);
+                setTimeout(function() {$('#main').fadeIn(1500)}, 1000);
                 }, 1000);
         })
     </script>
