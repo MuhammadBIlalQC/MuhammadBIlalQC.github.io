@@ -1,0 +1,172 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Muhammad's Portfolio</title>
+    <style>
+            * {
+                font-family: 'Open Sans', sans-serif;
+            }
+            html, body {
+                margin: 0px;
+                background-color: #292929 !important;
+            }
+
+            h1 {
+                color: #6EEFBE !important;
+            }
+
+            nav {
+                background-color: #292929 !important;
+                border: none !important;
+            }
+            nav a {
+                color: #6EEFBE !important;
+            }
+            #intro {
+                position: fixed;
+                top:0px;
+                bottom: 0px;
+                height: 100%;
+                width: 100%;
+                background-image: url('images/background-1080.jpeg')
+            }
+            #intro > h1 {
+                text-align: center;
+            }
+
+            #main {
+                display: none;
+            }
+
+            #main h1 {
+                font-family: 'Major Mono Display', monospace;
+            }
+            #main p {
+                color: rgb(75, 184, 241);
+                font-family: 'Quicksand', sans-serif;
+            }
+            #cat {
+                height: 500px;
+            }
+
+            #progress-bars-container p {
+                color: #6EEFBE;
+            }
+
+            @media only screen and (min-height: 800px) {
+                #intro > h1 {
+                    padding-top: 200px;
+                    font-size: 120px;
+                    color: #EEEEEE;
+                    font-family: 'Source Sans Pro', sans-serif;
+                }
+                #main {
+                    padding-top: 50px;
+                }
+                #main p {
+                    font-size: 30px;
+                }
+            }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Muhammad Bilal</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Github</a></li>
+                    <li><a href="#">Resume</a></li>
+                    <li><a href="#">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="intro">
+        <h1>Hi, I am Muhammad.</h1>
+    </div>
+
+    <div id="main" class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-md-offset-1 col-md-5">
+                <h1 style="text-align: center">Hi, I am Muhammad!</h1>
+                <p>
+                    I am currently pursing a degree in Computer Science. My interests lay around the realm of security, data, design, mathematics and algorithms. 
+                    I am an ambitious learner, always looking to expand my list of skills. When given the task of projects, I always put time and effort into making sure it is 
+                    the best possible product. Ensuring all resources and skills are put to work, as well as learning new skills along the way, making the finished product as 
+                    close to perfect as possible.
+                </p>
+            </div>
+            <div class="col-md-5">
+                <img id="cat" src="images/cat2.png">
+            </div>
+        </div>
+        <div class="row" style="margin-top: 40px;">
+            <div class="col-md-offset-3 col-md-6"  id="progress-bars-container">
+                <div class="my-progress">
+                    <p>Problem Solving</p>
+                    <div class="progress">
+                        <div id="Problem-Solving-Progress" class="progress-bar progress-bar-striped" role="progressbar" style="width: 95%"></div>
+                    </div>
+                </div>
+                <div class="my-progress">
+                    <p>Programming</p>
+                    <div class="progress">
+                        <div id="Programming-Progress" class="progress-bar progress-bar-striped progress-bar-info" role="progressbar"
+                             style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="my-progress">
+                    <p>Algorithms</p>
+                    <div class="progress">
+                        <div id="Algorithms-Progress" class="progress-bar progress-bar-striped progress-bar-success" role="progressbar"
+                             style="width: 95%"></div>
+                    </div>
+                </div>
+                <div class="my-progress">
+                    <p>Web Technolgoies</p>
+                    <div class="progress">
+                        <div id="Web-Progress" class="progress-bar progress-bar-striped progress-bar-warning" role="progressbar" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="my-progress">
+                    <p>Hard Work</p>
+                    <div class="progress">
+                        <div id="Hard-Work-Progress" class="progress-bar progress-bar-striped progress-bar-danger" role="progressbar" style="width: 100%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            setTimeout(function(){
+                $('#intro').fadeOut(3000);
+                setTimeout(function() {$('#main').fadeIn(2000)}, 3000);
+                }, 1000);
+        })
+    </script>
+</body>
+
+</html>
