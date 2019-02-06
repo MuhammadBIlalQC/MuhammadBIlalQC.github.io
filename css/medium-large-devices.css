@@ -1,0 +1,22 @@
+@media only screen and (min-height: 800px) {
+    #intro > h1 {
+        padding-top: 200px;
+        font-size: 120px;
+        color: #EEEEEE;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    #main {
+        padding-top: 50px;
+    }
+    #main p {
+        font-size: 30px;
+    }
+
+    .experience-element {
+        height: 450px;
+        padding: 20px;
+    }
+    .experience-element li {
+        line-height: 30px;
+    }
+}
